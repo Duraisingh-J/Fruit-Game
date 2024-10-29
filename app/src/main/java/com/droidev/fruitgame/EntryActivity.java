@@ -63,8 +63,8 @@ public class EntryActivity extends AppCompatActivity {
         else if(isNear(dynamicimage, vegetables) && correctcategory.equals("Vegetables")) isMatch = true;
         else if(isNear(dynamicimage, dryfruits) && correctcategory.equals("Dry Fruits")) isMatch = true;
 
-        if(isMatch) showMessage("Well Done");
-        else showMessage("Wrong match");
+//        if(isMatch) showMessage("Well Done");
+//        else showMessage("Wrong match");
 
 //        new Handler().postDelayed(this::nextImage, 2000);
         toggleImageSizeandSwap();
@@ -151,9 +151,9 @@ public class EntryActivity extends AppCompatActivity {
         return Math.abs(imageX - textX) < 150 && Math.abs(imageY - textY) < 150;
     }
 
-    private void showMessage(String msg) {
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT);
-    }
+//    private void showMessage(String msg) {
+//        Toast.makeText(this, msg, Toast.LENGTH_SHORT);
+//    }
 
     private void nextImage() {
         checkMatch(dynamicimage);
